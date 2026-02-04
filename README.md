@@ -36,23 +36,24 @@
 
 ## 📂 Структура проекта
 
+```text
 project/
-├── client/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
+├── client/                 # Клиентская часть (Frontend)
+│   ├── index.html          # Главный дашборд
+│   ├── script.js           # Логика взаимодействия с API
+│   └── style.css           # Стилизация интерфейса
 │
-├── server/
-│   ├── app.py
-│   ├── config.py
-│   ├── models.py
-│   ├── db_init.py
-│   └── services/
-│       ├── nlp_service.py
-│       └── generator.py
+├── server/                 # Серверная часть (Backend)
+│   ├── services/
+│   │   ├── nlp_service.py  # Модуль инициализации и работы нейросети
+│   │   └── generator.py    # Модуль генерации синтетических данных
+│   ├── app.py              # Точка входа Flask приложения, роутинг
+│   ├── config.py           # Конфигурация приложения и БД
+│   ├── models.py           # ORM модели базы данных
+│   └── db_init.py          # Скрипт инициализации БД
 │
-├── requirements.txt
-└── README.md
+├── requirements.txt        # Зависимости проекта
+└── README.md               # Документация
 
 ---
 
