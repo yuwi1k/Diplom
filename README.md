@@ -44,8 +44,6 @@ project/
 ├── requirements.txt
 └── README.md
 
-yaml
-Копировать код
 
 ---
 
