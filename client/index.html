@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Brand Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Brand Analytics: Дипломный проект</h1>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h3>Ручной анализ</h3>
+                <textarea id="inputText" placeholder="Введите отзыв о бренде..."></textarea>
+                <button onclick="analyzeText()">Анализировать</button>
+                <div id="manualResult"></div>
+            </div>
+
+            <div class="card">
+                <h3>Генерация (Симуляция сбора)</h3>
+                <p>Нажмите, чтобы "найти" новый отзыв в сети:</p>
+                <button class="secondary" onclick="generateReview()">Найти отзыв</button>
+            </div>
+            
+            <div class="card">
+                <h3>Статистика тональности</h3>
+                <canvas id="sentimentChart"></canvas>
+            </div>
+        </div>
+
+        <h2>Отзывы</h2>
+
+<p id="totalCount">Всего отзывов: 0</p>
+<div id="reviewsList"></div>
+<button id="loadMoreBtn" onclick="loadMoreReviews()">
+    Загрузить ещё
+</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
